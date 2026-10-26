@@ -2,14 +2,14 @@
 
 ## How do I install these formulae?
 
-`brew install mubit-ai/tap/<formula>`
+`brew install MubitLabs/tap/<formula>`
 
-Or `brew tap mubit-ai/tap` and then `brew install <formula>`.
+Or `brew tap MubitLabs/tap` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "mubit-ai/tap"
+tap "MubitLabs/tap"
 brew "<formula>"
 ```
 
@@ -17,7 +17,7 @@ brew "<formula>"
 
 | Formula | Description |
 |---|---|
-| `mubit-cli` | Command-line client for the Mubit console: organizations, projects, instances, keys, and usage |
+| `mubit-cli` | The command-line client for Mubit: manage tasks, calls, trained models, keys and settings from a terminal |
 
 ## Maintenance
 
