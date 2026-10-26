@@ -1,15 +1,15 @@
 class MubitCli < Formula
   desc "Command-line client for the Mubit console"
-  homepage "https://github.com/mubit-ai/mubit-cli"
+  homepage "https://github.com/MubitLabs/mubit-cli"
 
   on_macos do
     on_arm do
-      url "https://github.com/mubit-ai/mubit-cli/releases/download/v0.1.1/mubit-cli-0.1.1-macos-arm64.tar.gz"
-      sha256 "dbc072468b0232bfc1ac299ddf677e6bfeb2cd959b58ab1864cb10b7dd3b78aa"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.0/mubit-cli-1.0.0-macos-arm64.tar.gz"
+      sha256 "bae2e5012046853fe9aaad05e61b0e7b90f97063578ba0bf5545f41fd7c4e8b4"
     end
     on_intel do
-      url "https://github.com/mubit-ai/mubit-cli/releases/download/v0.1.1/mubit-cli-0.1.1-macos-x86_64.tar.gz"
-      sha256 "97411d698eb9726c434168cba359b85d3a74242d773f44077fb3170d6391964c"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.0/mubit-cli-1.0.0-macos-x86_64.tar.gz"
+      sha256 "581e452fa833830d3574011e94c0ff3e48fa0d36dcc3916a1f2f45ba0e8efc2f"
     end
   end
 
@@ -19,12 +19,12 @@ class MubitCli < Formula
     depends_on "dbus"
 
     on_arm do
-      url "https://github.com/mubit-ai/mubit-cli/releases/download/v0.1.1/mubit-cli-0.1.1-linux-arm64.tar.gz"
-      sha256 "0fdae780ccf3f23af3142cb6bd104e82240947b7e7117f13f7bfc4fd1ba9a702"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.0/mubit-cli-1.0.0-linux-arm64.tar.gz"
+      sha256 "5aa99740cb151fd984c473c2ddabc3be2f6d0ce64b208da87cbb660b031c1fe5"
     end
     on_intel do
-      url "https://github.com/mubit-ai/mubit-cli/releases/download/v0.1.1/mubit-cli-0.1.1-linux-x86_64.tar.gz"
-      sha256 "cbd7f1b9beb62bcf66be16ecad96efd537a452ba85d2de0711850061b8b0650b"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.0/mubit-cli-1.0.0-linux-x86_64.tar.gz"
+      sha256 "b3165592ab7f08cba628ec1025b667e8f82ea2973149d4bae22c34e236d8db21"
     end
   end
 
@@ -36,6 +36,6 @@ class MubitCli < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/mubit-cli --version")
+    assert_match "1.0.0", shell_output("#{bin}/mubit-cli --version")
   end
 end
