@@ -4,12 +4,12 @@ class MubitCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.4/mubit-cli-1.0.4-macos-arm64.tar.gz"
-      sha256 "c632665d2e10c1bf032f1c9c51e6a7a362ca1ff871bbc123383810e34225aa14"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.5/mubit-cli-1.0.5-macos-arm64.tar.gz"
+      sha256 "b708de642bbe4de66dd2116f453074e1706937e4194ace6bb023919cb95503e4"
     end
     on_intel do
-      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.4/mubit-cli-1.0.4-macos-x86_64.tar.gz"
-      sha256 "1241149f79c2d1f549015246516bf4dac6b4d2e89b846af3f12bfd3fe1e67c54"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.5/mubit-cli-1.0.5-macos-x86_64.tar.gz"
+      sha256 "e61335bf77c25564609074018d3e0ecbef8ac560b4a5201d29eb5b342f216237"
     end
   end
 
@@ -19,12 +19,12 @@ class MubitCli < Formula
     depends_on "dbus"
 
     on_arm do
-      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.4/mubit-cli-1.0.4-linux-arm64.tar.gz"
-      sha256 "5aec997e37a7098e39973f4f569c9f061345a9e749db9e10ad154464e5beb327"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.5/mubit-cli-1.0.5-linux-arm64.tar.gz"
+      sha256 "c57e63375ec780140899eb54c872ad516e45239f5d6be284630848e5634e4568"
     end
     on_intel do
-      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.4/mubit-cli-1.0.4-linux-x86_64.tar.gz"
-      sha256 "cbb187984889ac6ba5721590e91990af528ff4155704242a55ffe2a556aa4831"
+      url "https://github.com/MubitLabs/mubit-cli/releases/download/v1.0.5/mubit-cli-1.0.5-linux-x86_64.tar.gz"
+      sha256 "ef9a4a0aacba1b7e38051d34a6bfaa354f040f89914812ca9b191c131eb8db0f"
     end
   end
 
@@ -36,6 +36,6 @@ class MubitCli < Formula
   end
 
   test do
-    assert_match "1.0.4", shell_output("#{bin}/mubit-cli --version")
+    assert_match "1.0.5", shell_output("#{bin}/mubit-cli --version")
   end
 end
